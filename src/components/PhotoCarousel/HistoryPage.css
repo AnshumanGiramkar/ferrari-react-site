@@ -1,0 +1,39 @@
+* {
+  z-index: 199;
+}
+.photo-carousel {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Set height to 100% of viewport height */
+  overflow: hidden; /* Hide any overflow content */
+}
+
+.photo-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.history-arrow {
+  position: absolute;
+  top: 50%;
+  background-color: none;
+  font-size: 40px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons appear above the image */
+}
+
+.history-arrow:hover {
+  background-color: #555;
+}
+
+.history-arrow:first-child {
+  left: 10px;
+}
+
+.history-arrow:last-child {
+  right: 10px;
+}

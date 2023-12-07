@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hover-background: rgba(179, 179, 179, 0.2);
+}
+
+/* fonts.css */
+
+@font-face {
+  font-family: 'EnzoSans';
+  src: url('./assets/Ferrari-SansRegular.woff2') format('woff'),
+    url('./assets/OpenSans-Regular-webfont.woff') format('woff');
+  /* Add more formats if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: EnzoSans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  color: white;
+  overflow-y: auto;
+}
+
+.container {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.shop-page {
+  background-color: black;
+  display: grid;
+  place-items: center;
+  padding: 100px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
